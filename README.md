@@ -1,5 +1,5 @@
-2C2P Demo
+Dragonpay Demo
 ---
 
 Nothing here.
-Visit http://www.2c2p.com for more info.
+Visit http://www.dragonpay.ph for more info.
