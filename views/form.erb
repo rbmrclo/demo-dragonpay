@@ -1,0 +1,72 @@
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css">
+<style>
+  body {
+    padding-top: 40px;
+  }
+</style>
+
+<div class="container" >
+  <h2 class="text-center"> Dragonpay Demo </h2>
+  <br/>
+  <form method="post" action="/order" class="form-horizontal">
+    <div class="form-group">
+      <label for="merchant_id" class="col-sm-2 control-label"> Merchant ID </label>
+      <div class="col-sm-10">
+        <input type="text" id="merchant_id" name="merchant_id" value=<%= "#{@merchant_id}" %> class="form-control"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="txnid" class="col-sm-2 control-label"> Transaction ID </label>
+      <div class="col-sm-10">
+        <input type="text" id="txnid" name="txnid" value=<%= "#{@txnid}" %> class="form-control"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="amount" class="col-sm-2 control-label"> Amount </label>
+      <div class="col-sm-10">
+        <input id="amount" name="amount" type="text" value=<%= "#{@amount}" %> class="form-control"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="ccy" class="col-sm-2 control-label"> Currency </label>
+      <div class="col-sm-10">
+        <input id="ccy" name="ccy" type="text" value=<%= "#{@currency}" %> class="form-control"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="description" class="col-sm-2 control-label"> Payment Description </label>
+      <div class="col-sm-10">
+        <input type="text" id="description" name="description" value=<%= "#{@description}" %> class="form-control"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="email" class="col-sm-2 control-label"> Customer Email </label>
+      <div class="col-sm-10">
+        <input type="text" id="email" name="email" value=<%= "#{@email}" %> class="form-control"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="digest" class="col-sm-2 control-label"> Digest </label>
+      <div class="col-sm-10">
+        <input type="text" id="digest" name="digest" value=<%= "#{@digest}" %> class="form-control"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="secret_key" class="col-sm-2 control-label"> Secret Key </label>
+      <div class="col-sm-10">
+        <input type="text" id="secret_key" name="secret_key" value=<%= "#{@secret_key}" %> class="form-control"/>
+      </div>
+    </div>
+
+    <div class="text-center">
+      <button type="Submit" name="btnSubmit" value="Submit" id="btnSubmit" class="btn btn-primary"/> Submit </button>
+    </div>
+  </form>
+</div>
